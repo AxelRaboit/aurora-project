@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Aurora\Module\Project\Controller\Admin;
+namespace Aurora\Module\Project\Controller\Backend;
 
 use Aurora\Core\Audit\Repository\AuditLogRepository;
 use Aurora\Core\Audit\Serializer\AuditLogSerializer;
@@ -95,7 +95,7 @@ final class ProjectsController extends AbstractController
     #[Route('', name: '', methods: [HttpMethodEnum::Get->value])]
     public function index(): Response
     {
-        return $this->render('@Project/admin/projects/index.html.twig', $this->viewBuilder->indexView());
+        return $this->render('@Project/backend/projects/index.html.twig', $this->viewBuilder->indexView());
     }
 
     #[Route('/list', name: '_list', methods: [HttpMethodEnum::Get->value])]
