@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Aurora\Module\Project\DTO;
+namespace Aurora\Module\Project\Dto;
 
 /**
  * Bulk-replace payload for a task's checklist. The client sends the desired

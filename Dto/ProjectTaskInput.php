@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Aurora\Module\Project\DTO;
+namespace Aurora\Module\Project\Dto;
 
 use Aurora\Core\Support\Str;
 use Aurora\Module\Project\Enum\ProjectTaskPriorityEnum;
